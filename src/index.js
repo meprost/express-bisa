@@ -9,6 +9,12 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/hello", (req, res) => {
+  res.json({
+    message: "hallo ini udah di deploy",
+  });
+});
+
 app.listen(port, () => {
   console.log(`Http server is up and running on http://localhost:${port}`);
 });
